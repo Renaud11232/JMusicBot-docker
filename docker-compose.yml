@@ -1,0 +1,8 @@
+version: "3"
+services:
+  jmusicbot:
+    container_name: jmusicbot
+    image: "ghcr.io/renaud11232/jmusicbot"
+    volumes:
+      - ./data:/data
+    restart: unless-stopped
